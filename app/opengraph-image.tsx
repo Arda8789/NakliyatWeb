@@ -7,17 +7,21 @@ export const contentType = "image/png";
 const LOGO_SVG = `<svg width="84" height="84" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
   <defs>
     <linearGradient id="bg" x1="4" y1="4" x2="96" y2="96" gradientUnits="userSpaceOnUse">
-      <stop offset="0" stop-color="#182B4D"/>
-      <stop offset="1" stop-color="#0B1730"/>
+      <stop offset="0" stop-color="#1B2E52"/>
+      <stop offset="1" stop-color="#0A1122"/>
     </linearGradient>
-    <linearGradient id="diamond" x1="37" y1="7" x2="63" y2="33" gradientUnits="userSpaceOnUse">
+    <linearGradient id="mgrad" x1="50" y1="18" x2="50" y2="78" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FFFFFF"/>
+      <stop offset="1" stop-color="#E7ECF6"/>
+    </linearGradient>
+    <linearGradient id="diamond" x1="24" y1="5" x2="46" y2="29" gradientUnits="userSpaceOnUse">
       <stop offset="0" stop-color="#FDBA74"/>
       <stop offset="1" stop-color="#F97316"/>
     </linearGradient>
   </defs>
   <rect x="4" y="4" width="92" height="92" rx="24" fill="url(#bg)"/>
-  <polygon points="20,76 20,24 38,24 50,58 62,24 80,24 80,76" fill="#FFFFFF"/>
-  <rect x="41" y="11" width="18" height="18" rx="3" fill="url(#diamond)" transform="rotate(45 50 20)"/>
+  <path d="M22,78 L22,20 L40,20 L50,46 L60,34 L78,34 L78,78 Z" fill="url(#mgrad)"/>
+  <rect x="25" y="7" width="17" height="17" rx="3.5" fill="url(#diamond)" transform="rotate(45 33.5 15.5)"/>
 </svg>`;
 
 export default function OpengraphImage() {
