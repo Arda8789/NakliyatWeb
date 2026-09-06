@@ -1,0 +1,85 @@
+@import "tailwindcss";
+
+@theme inline {
+  --font-display: var(--font-jakarta);
+  --font-body: var(--font-inter);
+}
+
+:root {
+  --bg-base: #05070c;
+}
+
+* {
+  scrollbar-color: #2b3a55 transparent;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--bg-base);
+  color: #e7ecf6;
+  font-family: var(--font-body), ui-sans-serif, system-ui, sans-serif;
+  background-image:
+    radial-gradient(60rem 34rem at 82% -8%, rgba(37, 99, 235, 0.28), transparent 60%),
+    radial-gradient(46rem 30rem at -6% 12%, rgba(34, 211, 238, 0.16), transparent 60%),
+    radial-gradient(50rem 40rem at 50% 118%, rgba(79, 70, 229, 0.20), transparent 60%),
+    linear-gradient(180deg, #05070c 0%, #060911 40%, #05070c 100%);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+::selection {
+  background: rgba(56, 189, 248, 0.35);
+  color: #ffffff;
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--font-display), ui-sans-serif, system-ui, sans-serif;
+  letter-spacing: -0.02em;
+}
+
+@layer components {
+  .container-page {
+    @apply mx-auto w-full max-w-7xl px-5 sm:px-8;
+  }
+
+  .section-padding {
+    @apply py-16 md:py-24;
+  }
+
+  .glass-card {
+    @apply relative rounded-3xl border border-white/10 bg-white/[0.045] shadow-[0_8px_40px_-14px_rgba(0,0,0,0.7)] backdrop-blur-xl;
+  }
+
+  .glass-panel {
+    @apply border border-white/10 bg-[#070c17]/80 backdrop-blur-xl;
+  }
+
+  .text-gradient {
+    @apply bg-gradient-to-r from-blue-400 via-cyan-300 to-blue-400 bg-clip-text text-transparent;
+  }
+
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-2 rounded-full bg-gradient-to-r from-blue-600 via-blue-500 to-cyan-400 px-6 py-3.5 text-sm font-semibold text-white shadow-[0_10px_30px_-8px_rgba(37,99,235,0.65)] transition-all duration-300 hover:shadow-[0_14px_36px_-6px_rgba(34,211,238,0.55)] hover:brightness-110 active:scale-[0.98];
+  }
+
+  .btn-outline {
+    @apply inline-flex items-center justify-center gap-2 rounded-full border border-white/15 bg-white/[0.03] px-6 py-3.5 text-sm font-semibold text-white backdrop-blur-sm transition-all duration-300 hover:border-white/30 hover:bg-white/[0.08];
+  }
+
+  .badge {
+    @apply inline-flex items-center gap-1.5 rounded-full border border-white/10 bg-white/[0.04] px-3.5 py-1.5 text-xs font-medium text-slate-300 backdrop-blur-sm;
+  }
+
+  .card-hover {
+    @apply transition-all duration-300 hover:-translate-y-1 hover:border-white/20 hover:bg-white/[0.07];
+  }
+}
+
+@layer utilities {
+  .mask-fade-b {
+    mask-image: linear-gradient(to bottom, black 70%, transparent 100%);
+  }
+}
