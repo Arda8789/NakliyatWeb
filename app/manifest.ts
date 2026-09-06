@@ -9,8 +9,8 @@ export default function manifest(): MetadataRoute.Manifest {
       "Türkiye genelinde evden eve nakliyat ve asansörlü nakliyat hizmeti.",
     start_url: "/",
     display: "standalone",
-    background_color: "#05070c",
-    theme_color: "#0A1220",
+    background_color: "#ffffff",
+    theme_color: "#0F1E3C",
     icons: [
       { src: "/icon.svg", sizes: "any", type: "image/svg+xml" },
     ],

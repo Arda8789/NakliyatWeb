@@ -20,9 +20,9 @@ export function FAQAccordion({ items }: { items: { q: string; a: string }[] }) {
               className="flex w-full items-center justify-between gap-4 px-5 py-4.5 text-left"
               aria-expanded={isOpen}
             >
-              <span className="text-[15px] font-semibold text-white">{item.q}</span>
+              <span className="text-[15px] font-semibold text-slate-900">{item.q}</span>
               <ChevronDownIcon
-                className={`h-5 w-5 shrink-0 text-blue-400 transition-transform duration-300 ${
+                className={`h-5 w-5 shrink-0 text-orange-500 transition-transform duration-300 ${
                   isOpen ? "rotate-180" : ""
                 }`}
               />
@@ -33,7 +33,7 @@ export function FAQAccordion({ items }: { items: { q: string; a: string }[] }) {
               }`}
             >
               <div className="overflow-hidden">
-                <p className="px-5 pb-5 text-sm leading-relaxed text-slate-400">{item.a}</p>
+                <p className="px-5 pb-5 text-sm leading-relaxed text-slate-500">{item.a}</p>
               </div>
             </div>
           </div>

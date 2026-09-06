@@ -46,20 +46,20 @@ export default async function BlogPostPage({
           })}{" "}
           · {post.readingTime} okuma
         </SectionKicker>
-        <h1 className="max-w-3xl text-3xl font-extrabold leading-tight text-white sm:text-4xl">
+        <h1 className="max-w-3xl text-3xl font-extrabold leading-tight text-slate-900 sm:text-4xl">
           {post.title}
         </h1>
-        <p className="mt-5 max-w-2xl text-base leading-relaxed text-slate-400">
+        <p className="mt-5 max-w-2xl text-base leading-relaxed text-slate-500">
           {post.intro}
         </p>
 
         <div className="mt-10 max-w-3xl space-y-10">
           {post.sections.map((section) => (
             <div key={section.heading}>
-              <h2 className="text-xl font-bold text-white">{section.heading}</h2>
+              <h2 className="text-xl font-bold text-slate-900">{section.heading}</h2>
               <div className="mt-3 space-y-3">
                 {section.paragraphs.map((p, i) => (
-                  <p key={i} className="text-sm leading-relaxed text-slate-400">
+                  <p key={i} className="text-sm leading-relaxed text-slate-500">
                     {p}
                   </p>
                 ))}

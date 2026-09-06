@@ -10,8 +10,8 @@ export function ProcessSteps({
           <div className="text-gradient text-3xl font-extrabold">
             {String(index + 1).padStart(2, "0")}
           </div>
-          <h3 className="mt-3 text-[15px] font-bold text-white">{step.title}</h3>
-          <p className="mt-1.5 text-sm leading-relaxed text-slate-400">{step.desc}</p>
+          <h3 className="mt-3 text-[15px] font-bold text-slate-900">{step.title}</h3>
+          <p className="mt-1.5 text-sm leading-relaxed text-slate-500">{step.desc}</p>
         </div>
       ))}
     </div>

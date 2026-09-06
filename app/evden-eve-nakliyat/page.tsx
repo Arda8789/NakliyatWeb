@@ -8,6 +8,7 @@ import { FAQAccordion } from "@/components/FAQAccordion";
 import { CTASection } from "@/components/CTASection";
 import { CityLinkGrid } from "@/components/CityLinkGrid";
 import { ServiceCard } from "@/components/ServiceCard";
+import { PhotoFrame } from "@/components/PhotoFrame";
 import { JsonLd } from "@/components/JsonLd";
 import { serviceSchema } from "@/lib/schema";
 import { CheckIcon, ElevatorIcon, BuildingIcon, WarehouseIcon } from "@/components/icons";
@@ -57,11 +58,11 @@ export default function EvdenEveNakliyatPage() {
         <div className="grid gap-10 lg:grid-cols-[1.4fr_1fr] lg:gap-12">
           <div>
             <SectionKicker>Evden Eve Güvenilir Nakliyat</SectionKicker>
-            <h1 className="text-4xl font-extrabold leading-tight text-white sm:text-5xl">
+            <h1 className="text-4xl font-extrabold leading-tight text-slate-900 sm:text-5xl">
               <span className="text-gradient">Evden Eve Nakliyat</span> Hizmetinde
               Türkiye&apos;nin Güvendiği Adres
             </h1>
-            <p className="mt-6 text-base leading-relaxed text-slate-400 sm:text-lg">
+            <p className="mt-6 text-base leading-relaxed text-slate-500 sm:text-lg">
               MerkezNakliyat olarak, evden eve nakliyat sürecinin her aşamasında
               yanınızdayız. Eşyalarınızın sökümünden profesyonel ambalajlanmasına,
               güvenli taşınmasından yeni evinizde yerleştirilmesine kadar tüm süreci
@@ -75,16 +76,16 @@ export default function EvdenEveNakliyatPage() {
             </div>
           </div>
           <div className="glass-card p-6">
-            <h2 className="text-sm font-semibold uppercase tracking-wide text-slate-400">
+            <h2 className="text-sm font-semibold uppercase tracking-wide text-slate-500">
               Evden Eve Nakliyat Avantajları
             </h2>
             <ul className="mt-4 space-y-3">
               {benefitPoolEvdenEve.map((b) => (
                 <li key={b.title} className="flex items-start gap-3">
-                  <CheckIcon className="mt-0.5 h-5 w-5 shrink-0 text-cyan-400" />
+                  <CheckIcon className="mt-0.5 h-5 w-5 shrink-0 text-orange-500" />
                   <div>
-                    <p className="text-sm font-semibold text-white">{b.title}</p>
-                    <p className="text-xs text-slate-400">{b.desc}</p>
+                    <p className="text-sm font-semibold text-slate-900">{b.title}</p>
+                    <p className="text-xs text-slate-500">{b.desc}</p>
                   </div>
                 </li>
               ))}
@@ -93,10 +94,18 @@ export default function EvdenEveNakliyatPage() {
         </div>
       </section>
 
+      <section className="pt-12 sm:pt-16">
+        <PhotoFrame
+          src="/images/evden-eve-nakliyat.jpg"
+          alt="MerkezNakliyat ekibi evden eve nakliyat sürecinde eşya taşıyor"
+          aspect="aspect-[21/9]"
+        />
+      </section>
+
       <section className="section-padding grid gap-10 lg:grid-cols-2">
         <div>
-          <h2 className="text-2xl font-bold text-white">Evden Eve Nakliyat Nedir?</h2>
-          <p className="mt-4 text-sm leading-relaxed text-slate-400">
+          <h2 className="text-2xl font-bold text-slate-900">Evden Eve Nakliyat Nedir?</h2>
+          <p className="mt-4 text-sm leading-relaxed text-slate-500">
             Evden eve nakliyat, ev eşyalarınızın mevcut adresinizden yeni adresinize
             paketleme, taşıma, indirme-bindirme ve yerleştirme süreçleri dahil olmak
             üzere uçtan uca profesyonel bir ekip tarafından taşınmasıdır. MerkezNakliyat
@@ -104,9 +113,9 @@ export default function EvdenEveNakliyatPage() {
             takımından beyaz eşyaya kadar tüm eşyalarınızı özel ambalaj malzemeleriyle
             paketleyip sigortalı araçlarımızla taşıyoruz.
           </p>
-          <p className="mt-4 text-sm leading-relaxed text-slate-400">
+          <p className="mt-4 text-sm leading-relaxed text-slate-500">
             Yüksek katlı bina ve sitelerde evden eve nakliyat sürecini{" "}
-            <Link href="/asansorlu-nakliyat-hizmeti" className="text-blue-400 hover:text-blue-300">
+            <Link href="/asansorlu-nakliyat-hizmeti" className="font-semibold text-orange-600 hover:text-orange-700">
               asansörlü nakliyat hizmetimiz
             </Link>{" "}
             ile birleştirerek merdiven kullanmadan, hızlı ve hasarsız bir taşınma
@@ -114,17 +123,17 @@ export default function EvdenEveNakliyatPage() {
           </p>
         </div>
         <div>
-          <h2 className="text-2xl font-bold text-white">
+          <h2 className="text-2xl font-bold text-slate-900">
             Evden Eve Nakliyat Fiyatlarını Etkileyen Faktörler
           </h2>
-          <p className="mt-4 text-sm leading-relaxed text-slate-400">
+          <p className="mt-4 text-sm leading-relaxed text-slate-500">
             Evden eve nakliyat fiyatları; taşınacak eşya miktarı ve ev metrekaresi,
             şehir içi veya şehirlerarası olması, bulunduğunuz katın durumu (asansörlü
             nakliyat ihtiyacı), ambalajlama ve depolama gibi ek hizmet talepleri
             gibi değişkenlere göre belirlenir. Şeffaf fiyat politikamız sayesinde
             keşif sonrası size sunulan teklifte gizli ücret bulunmaz.
           </p>
-          <p className="mt-4 text-sm leading-relaxed text-slate-400">
+          <p className="mt-4 text-sm leading-relaxed text-slate-500">
             Bütçenize en uygun evden eve nakliyat paketini oluşturmak için hemen{" "}
             <InlinePhoneLink /> numaralı hattımızdan bize ulaşabilir, ücretsiz keşif
             talebinde bulunabilirsiniz.
@@ -135,7 +144,7 @@ export default function EvdenEveNakliyatPage() {
       <section className="section-padding">
         <div className="mx-auto max-w-2xl text-center">
           <SectionKicker>Sürecimiz</SectionKicker>
-          <h2 className="text-3xl font-extrabold text-white sm:text-4xl">
+          <h2 className="text-3xl font-extrabold text-slate-900 sm:text-4xl">
             Evden Eve Nakliyat Sürecimiz Nasıl İşler?
           </h2>
         </div>
@@ -147,10 +156,10 @@ export default function EvdenEveNakliyatPage() {
       <section className="section-padding">
         <div className="mx-auto max-w-2xl text-center">
           <SectionKicker>Hizmet Bölgelerimiz</SectionKicker>
-          <h2 className="text-3xl font-extrabold text-white sm:text-4xl">
+          <h2 className="text-3xl font-extrabold text-slate-900 sm:text-4xl">
             Şehrinizde Evden Eve Nakliyat Hizmeti
           </h2>
-          <p className="mt-4 text-slate-400">
+          <p className="mt-4 text-slate-500">
             Aşağıda öne çıkan şehirlerimizi görebilirsiniz. Türkiye&apos;nin tüm
             illerinde evden eve nakliyat hizmeti veriyoruz.
           </p>
@@ -168,7 +177,7 @@ export default function EvdenEveNakliyatPage() {
       <section className="section-padding">
         <div className="mx-auto max-w-2xl text-center">
           <SectionKicker>İlgili Hizmetler</SectionKicker>
-          <h2 className="text-3xl font-extrabold text-white sm:text-4xl">
+          <h2 className="text-3xl font-extrabold text-slate-900 sm:text-4xl">
             Taşınmanızı Tamamlayan Diğer Hizmetlerimiz
           </h2>
         </div>
@@ -182,7 +191,7 @@ export default function EvdenEveNakliyatPage() {
       <section className="section-padding">
         <div className="mx-auto max-w-2xl text-center">
           <SectionKicker>Sıkça Sorulan Sorular</SectionKicker>
-          <h2 className="text-3xl font-extrabold text-white sm:text-4xl">
+          <h2 className="text-3xl font-extrabold text-slate-900 sm:text-4xl">
             Evden Eve Nakliyat Hakkında Merak Edilenler
           </h2>
         </div>

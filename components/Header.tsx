@@ -24,17 +24,17 @@ export function Header() {
 
         <nav className="hidden items-center gap-1 lg:flex">
           <div className="group relative">
-            <button className="flex items-center gap-1 rounded-full px-4 py-2.5 text-sm font-medium text-slate-200 transition-colors hover:bg-white/5 hover:text-white">
+            <button className="flex items-center gap-1 rounded-full px-4 py-2.5 text-sm font-medium text-slate-600 transition-colors hover:bg-slate-100 hover:text-slate-900">
               Hizmetlerimiz
               <ChevronDownIcon className="h-4 w-4 text-slate-400 transition-transform duration-200 group-hover:rotate-180" />
             </button>
             <div className="invisible absolute left-0 top-full z-20 w-80 translate-y-2 rounded-2xl p-2 opacity-0 transition-all duration-200 group-hover:visible group-hover:translate-y-0 group-hover:opacity-100">
-              <div className="glass-card !bg-[#0a1120]/95 p-2">
+              <div className="glass-card p-2">
                 {NAV_SERVICES.map((s) => (
                   <Link
                     key={s.href}
                     href={s.href}
-                    className="block rounded-xl px-4 py-2.5 text-sm text-slate-200 transition-colors hover:bg-white/[0.06] hover:text-white"
+                    className="block rounded-xl px-4 py-2.5 text-sm text-slate-600 transition-colors hover:bg-orange-50 hover:text-slate-900"
                   >
                     {s.title}
                   </Link>
@@ -47,7 +47,7 @@ export function Header() {
             <Link
               key={l.href}
               href={l.href}
-              className="rounded-full px-4 py-2.5 text-sm font-medium text-slate-200 transition-colors hover:bg-white/5 hover:text-white"
+              className="rounded-full px-4 py-2.5 text-sm font-medium text-slate-600 transition-colors hover:bg-slate-100 hover:text-slate-900"
             >
               {l.title}
             </Link>
@@ -65,7 +65,7 @@ export function Header() {
           </a>
           <button
             onClick={() => setOpen((v) => !v)}
-            className="ml-1 flex h-11 w-11 items-center justify-center rounded-full border border-white/10 text-white lg:hidden"
+            className="ml-1 flex h-11 w-11 items-center justify-center rounded-full border border-slate-200 text-slate-700 lg:hidden"
             aria-label="Menü"
           >
             {open ? <CloseIcon className="h-5 w-5" /> : <MenuIcon className="h-5 w-5" />}
@@ -75,7 +75,7 @@ export function Header() {
 
       {open && (
         <div className="glass-panel border-t px-5 pb-6 pt-2 lg:hidden">
-          <p className="px-2 pb-2 pt-3 text-xs font-semibold uppercase tracking-wider text-slate-500">
+          <p className="px-2 pb-2 pt-3 text-xs font-semibold uppercase tracking-wider text-slate-400">
             Hizmetlerimiz
           </p>
           {NAV_SERVICES.map((s) => (
@@ -83,18 +83,18 @@ export function Header() {
               key={s.href}
               href={s.href}
               onClick={() => setOpen(false)}
-              className="block rounded-xl px-2 py-2.5 text-[15px] text-slate-200 hover:text-white"
+              className="block rounded-xl px-2 py-2.5 text-[15px] text-slate-600 hover:text-slate-900"
             >
               {s.title}
             </Link>
           ))}
-          <div className="mt-2 border-t border-white/10 pt-2">
+          <div className="mt-2 border-t border-slate-200 pt-2">
             {NAV_LINKS.map((l) => (
               <Link
                 key={l.href}
                 href={l.href}
                 onClick={() => setOpen(false)}
-                className="block rounded-xl px-2 py-2.5 text-[15px] text-slate-200 hover:text-white"
+                className="block rounded-xl px-2 py-2.5 text-[15px] text-slate-600 hover:text-slate-900"
               >
                 {l.title}
               </Link>

@@ -21,11 +21,11 @@ export default function SehirlerPage() {
 
       <section className="pt-8 sm:pt-10">
         <SectionKicker>Hizmet Bölgelerimiz</SectionKicker>
-        <h1 className="max-w-3xl text-4xl font-extrabold leading-tight text-white sm:text-5xl">
+        <h1 className="max-w-3xl text-4xl font-extrabold leading-tight text-slate-900 sm:text-5xl">
           Türkiye&apos;nin <span className="text-gradient">81 İlinde</span> Evden Eve
           ve Asansörlü Nakliyat
         </h1>
-        <p className="mt-6 max-w-2xl text-base leading-relaxed text-slate-400 sm:text-lg">
+        <p className="mt-6 max-w-2xl text-base leading-relaxed text-slate-500 sm:text-lg">
           Marmara&apos;dan Doğu Anadolu&apos;ya, Ege&apos;den Güneydoğu Anadolu&apos;ya
           kadar Türkiye&apos;nin her bölgesinde evden eve nakliyat ve asansörlü
           nakliyat hizmeti veriyoruz. Şehrinizi aşağıdan seçerek size özel içeriğe
@@ -38,26 +38,26 @@ export default function SehirlerPage() {
           const cities = CITIES.filter((c) => c.region === region);
           return (
             <section key={region}>
-              <h2 className="text-2xl font-extrabold text-white">{region} Bölgesi</h2>
+              <h2 className="text-2xl font-extrabold text-slate-900">{region} Bölgesi</h2>
               <div className="mt-6 grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-3">
                 {cities.map((c) => (
                   <div
                     key={c.slug}
                     className="glass-card flex items-center justify-between gap-3 p-4"
                   >
-                    <span className="text-sm font-semibold text-white">{c.name}</span>
+                    <span className="text-sm font-semibold text-slate-900">{c.name}</span>
                     <div className="flex items-center gap-2">
                       <Link
                         href={`/evden-eve-nakliyat/${c.slug}`}
                         aria-label={`${c.name} Evden Eve Nakliyat`}
-                        className="flex h-9 w-9 items-center justify-center rounded-full border border-white/10 bg-white/[0.04] text-blue-300 hover:border-blue-400/40 hover:text-blue-200"
+                        className="flex h-9 w-9 items-center justify-center rounded-full border border-slate-200 bg-white text-slate-400 hover:border-orange-300 hover:text-orange-600"
                       >
                         <TruckIcon className="h-4.5 w-4.5" />
                       </Link>
                       <Link
                         href={`/asansorlu-nakliyat-hizmeti/${c.slug}`}
                         aria-label={`${c.name} Asansörlü Nakliyat Hizmeti`}
-                        className="flex h-9 w-9 items-center justify-center rounded-full border border-white/10 bg-white/[0.04] text-cyan-300 hover:border-cyan-400/40 hover:text-cyan-200"
+                        className="flex h-9 w-9 items-center justify-center rounded-full border border-slate-200 bg-white text-slate-400 hover:border-orange-300 hover:text-orange-600"
                       >
                         <ElevatorIcon className="h-4.5 w-4.5" />
                       </Link>

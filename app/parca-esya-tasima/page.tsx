@@ -44,7 +44,7 @@ export default function ParcaEsyaTasimaPage() {
               Taşınacak eşyanızın fotoğraf veya listesini paylaştığınızda size en
               uygun aracı ve tarihi planlıyoruz. Şehir içi parça eşya taşımanın
               yanı sıra{" "}
-              <Link href="/evden-eve-nakliyat" className="text-blue-400 hover:text-blue-300">
+              <Link href="/evden-eve-nakliyat" className="text-orange-600 hover:text-orange-700">
                 şehirlerarası evden eve nakliyat
               </Link>{" "}
               seferlerimize entegre parça yük taşıma seçeneklerimiz de mevcuttur.

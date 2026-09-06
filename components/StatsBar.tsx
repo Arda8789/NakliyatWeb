@@ -11,7 +11,7 @@ export function StatsBar() {
       {STATS.map((s) => (
         <div key={s.label} className="text-center">
           <div className="text-gradient text-3xl font-extrabold sm:text-4xl">{s.value}</div>
-          <div className="mt-1.5 text-xs font-medium text-slate-400 sm:text-sm">{s.label}</div>
+          <div className="mt-1.5 text-xs font-medium text-slate-500 sm:text-sm">{s.label}</div>
         </div>
       ))}
     </div>

@@ -8,6 +8,7 @@ import { FAQAccordion } from "@/components/FAQAccordion";
 import { CTASection } from "@/components/CTASection";
 import { CityLinkGrid } from "@/components/CityLinkGrid";
 import { ServiceCard } from "@/components/ServiceCard";
+import { PhotoFrame } from "@/components/PhotoFrame";
 import { JsonLd } from "@/components/JsonLd";
 import { serviceSchema } from "@/lib/schema";
 import { CheckIcon, TruckIcon, PackageIcon, ShieldIcon } from "@/components/icons";
@@ -57,11 +58,11 @@ export default function AsansorluNakliyatPage() {
         <div className="grid gap-10 lg:grid-cols-[1.4fr_1fr] lg:gap-12">
           <div>
             <SectionKicker>Asansörlü Taşımacılık</SectionKicker>
-            <h1 className="text-4xl font-extrabold leading-tight text-white sm:text-5xl">
+            <h1 className="text-4xl font-extrabold leading-tight text-slate-900 sm:text-5xl">
               <span className="text-gradient">Asansörlü Nakliyat Hizmeti</span> ile
               Merdivensiz ve Güvenli Taşınma
             </h1>
-            <p className="mt-6 text-base leading-relaxed text-slate-400 sm:text-lg">
+            <p className="mt-6 text-base leading-relaxed text-slate-500 sm:text-lg">
               MerkezNakliyat&apos;ın asansörlü nakliyat hizmeti, yüksek katlı bina,
               site ve rezidanslarda eşyalarınızı merdiven kullanmadan, bina cephesine
               kurulan özel yük asansörleriyle güvenle taşır. Asansörlü taşımacılık
@@ -74,16 +75,16 @@ export default function AsansorluNakliyatPage() {
             </div>
           </div>
           <div className="glass-card p-6">
-            <h2 className="text-sm font-semibold uppercase tracking-wide text-slate-400">
+            <h2 className="text-sm font-semibold uppercase tracking-wide text-slate-500">
               Asansörlü Nakliyat Avantajları
             </h2>
             <ul className="mt-4 space-y-3">
               {benefitPoolAsansorlu.map((b) => (
                 <li key={b.title} className="flex items-start gap-3">
-                  <CheckIcon className="mt-0.5 h-5 w-5 shrink-0 text-cyan-400" />
+                  <CheckIcon className="mt-0.5 h-5 w-5 shrink-0 text-orange-500" />
                   <div>
-                    <p className="text-sm font-semibold text-white">{b.title}</p>
-                    <p className="text-xs text-slate-400">{b.desc}</p>
+                    <p className="text-sm font-semibold text-slate-900">{b.title}</p>
+                    <p className="text-xs text-slate-500">{b.desc}</p>
                   </div>
                 </li>
               ))}
@@ -92,33 +93,41 @@ export default function AsansorluNakliyatPage() {
         </div>
       </section>
 
+      <section className="pt-12 sm:pt-16">
+        <PhotoFrame
+          src="/images/asansorlu-nakliyat.jpg"
+          alt="MerkezNakliyat asansörlü nakliyat ile yüksek kattan eşya indiriyor"
+          aspect="aspect-[21/9]"
+        />
+      </section>
+
       <section className="section-padding grid gap-10 lg:grid-cols-2">
         <div>
-          <h2 className="text-2xl font-bold text-white">
+          <h2 className="text-2xl font-bold text-slate-900">
             Asansörlü Nakliyat Neden Tercih Edilmeli?
           </h2>
-          <p className="mt-4 text-sm leading-relaxed text-slate-400">
+          <p className="mt-4 text-sm leading-relaxed text-slate-500">
             Klasik merdivenle taşımacılıkta hem zaman kaybı hem de eşya ve bina hasarı
             riski yüksektir. Asansörlü nakliyat hizmetimizle, ağır beyaz eşyalar,
             koltuk takımları, piyano ve kasa gibi hacimli ürünler bile pencereden
             güvenle indirilip bindirilir. Bu yöntem özellikle{" "}
-            <Link href="/evden-eve-nakliyat" className="text-blue-400 hover:text-blue-300">
+            <Link href="/evden-eve-nakliyat" className="font-semibold text-orange-600 hover:text-orange-700">
               evden eve nakliyat
             </Link>{" "}
             sürecinizi hızlandırarak taşınma gününü çok daha konforlu hale getirir.
           </p>
         </div>
         <div>
-          <h2 className="text-2xl font-bold text-white">
+          <h2 className="text-2xl font-bold text-slate-900">
             Asansörlü Nakliyat Hizmeti Nasıl Uygulanır?
           </h2>
-          <p className="mt-4 text-sm leading-relaxed text-slate-400">
+          <p className="mt-4 text-sm leading-relaxed text-slate-500">
             Ekibimiz binanızın konumuna ve kat yüksekliğine uygun cephe asansörünü
             kurar, güvenlik önlemlerini alır ve deneyimli operatörler eşliğinde
             eşyalarınızı pencere veya balkondan indirip yeni katınıza aynı güvenlikle
             çıkarır. Tüm süreç boyunca eşyalarınız sigorta kapsamındadır.
           </p>
-          <p className="mt-4 text-sm leading-relaxed text-slate-400">
+          <p className="mt-4 text-sm leading-relaxed text-slate-500">
             Detaylı bilgi ve ücretsiz keşif için <InlinePhoneLink /> numaralı hattımızı
             arayabilirsiniz.
           </p>
@@ -128,7 +137,7 @@ export default function AsansorluNakliyatPage() {
       <section className="section-padding">
         <div className="mx-auto max-w-2xl text-center">
           <SectionKicker>Sürecimiz</SectionKicker>
-          <h2 className="text-3xl font-extrabold text-white sm:text-4xl">
+          <h2 className="text-3xl font-extrabold text-slate-900 sm:text-4xl">
             Asansörlü Nakliyat Sürecimiz
           </h2>
         </div>
@@ -140,7 +149,7 @@ export default function AsansorluNakliyatPage() {
       <section className="section-padding">
         <div className="mx-auto max-w-2xl text-center">
           <SectionKicker>Hizmet Bölgelerimiz</SectionKicker>
-          <h2 className="text-3xl font-extrabold text-white sm:text-4xl">
+          <h2 className="text-3xl font-extrabold text-slate-900 sm:text-4xl">
             Şehrinizde Asansörlü Nakliyat Hizmeti
           </h2>
         </div>
@@ -157,7 +166,7 @@ export default function AsansorluNakliyatPage() {
       <section className="section-padding">
         <div className="mx-auto max-w-2xl text-center">
           <SectionKicker>İlgili Hizmetler</SectionKicker>
-          <h2 className="text-3xl font-extrabold text-white sm:text-4xl">
+          <h2 className="text-3xl font-extrabold text-slate-900 sm:text-4xl">
             Asansörlü Nakliyatı Tamamlayan Hizmetlerimiz
           </h2>
         </div>
@@ -171,7 +180,7 @@ export default function AsansorluNakliyatPage() {
       <section className="section-padding">
         <div className="mx-auto max-w-2xl text-center">
           <SectionKicker>Sıkça Sorulan Sorular</SectionKicker>
-          <h2 className="text-3xl font-extrabold text-white sm:text-4xl">
+          <h2 className="text-3xl font-extrabold text-slate-900 sm:text-4xl">
             Asansörlü Nakliyat Hakkında Merak Edilenler
           </h2>
         </div>

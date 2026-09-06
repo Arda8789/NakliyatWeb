@@ -19,11 +19,11 @@ export default function BlogIndexPage() {
 
       <section className="pt-8 sm:pt-10">
         <SectionKicker>Nakliyat Rehberi</SectionKicker>
-        <h1 className="max-w-3xl text-4xl font-extrabold leading-tight text-white sm:text-5xl">
+        <h1 className="max-w-3xl text-4xl font-extrabold leading-tight text-slate-900 sm:text-5xl">
           Evden Eve ve <span className="text-gradient">Asansörlü Nakliyat</span>{" "}
           Hakkında Bilmeniz Gerekenler
         </h1>
-        <p className="mt-6 max-w-2xl text-base leading-relaxed text-slate-400 sm:text-lg">
+        <p className="mt-6 max-w-2xl text-base leading-relaxed text-slate-500 sm:text-lg">
           Taşınma sürecinizi kolaylaştıracak pratik bilgiler, fiyatlandırma
           rehberleri ve uzman tavsiyeleri.
         </p>
@@ -36,7 +36,7 @@ export default function BlogIndexPage() {
             href={`/blog/${post.slug}`}
             className="glass-card card-hover group flex flex-col p-6"
           >
-            <span className="text-xs font-medium uppercase tracking-wide text-blue-400">
+            <span className="text-xs font-medium uppercase tracking-wide text-orange-600">
               {new Date(post.date).toLocaleDateString("tr-TR", {
                 day: "numeric",
                 month: "long",
@@ -44,11 +44,11 @@ export default function BlogIndexPage() {
               })}{" "}
               · {post.readingTime}
             </span>
-            <h2 className="mt-3 text-lg font-bold text-white">{post.title}</h2>
-            <p className="mt-2 flex-1 text-sm leading-relaxed text-slate-400">
+            <h2 className="mt-3 text-lg font-bold text-slate-900">{post.title}</h2>
+            <p className="mt-2 flex-1 text-sm leading-relaxed text-slate-500">
               {post.description}
             </p>
-            <span className="mt-5 inline-flex items-center gap-1.5 text-sm font-semibold text-blue-400">
+            <span className="mt-5 inline-flex items-center gap-1.5 text-sm font-semibold text-orange-600">
               Devamını Oku
               <ArrowRightIcon className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
             </span>

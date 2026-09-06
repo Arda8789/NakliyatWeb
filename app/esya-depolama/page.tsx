@@ -42,7 +42,7 @@ export default function EsyaDepolamaPage() {
           body: (
             <p>
               {" "}
-              <Link href="/evden-eve-nakliyat" className="text-blue-400 hover:text-blue-300">
+              <Link href="/evden-eve-nakliyat" className="text-orange-600 hover:text-orange-700">
                 Evden eve nakliyat
               </Link>{" "}
               hizmetimizle birlikte eşyalarınızı doğrudan depo alanımıza taşıyabilir,

@@ -64,10 +64,10 @@ export default async function CityEvdenEvePage({
 
       <section className="pt-8 sm:pt-10">
         <SectionKicker>{city.region} Bölgesi · Plaka {city.plate}</SectionKicker>
-        <h1 className="max-w-3xl text-4xl font-extrabold leading-tight text-white sm:text-5xl">
+        <h1 className="max-w-3xl text-4xl font-extrabold leading-tight text-slate-900 sm:text-5xl">
           <span className="text-gradient">{city.name}</span> Evden Eve Nakliyat
         </h1>
-        <p className="mt-6 max-w-2xl text-base leading-relaxed text-slate-400 sm:text-lg">
+        <p className="mt-6 max-w-2xl text-base leading-relaxed text-slate-500 sm:text-lg">
           {content.intro[0]}
         </p>
         <div className="mt-8 flex flex-col gap-3 sm:flex-row">
@@ -78,8 +78,8 @@ export default async function CityEvdenEvePage({
 
       <section className="section-padding grid gap-10 lg:grid-cols-[1.3fr_1fr]">
         <div>
-          <p className="text-sm leading-relaxed text-slate-400">{content.intro[1]}</p>
-          <h2 className="mt-8 text-2xl font-bold text-white">
+          <p className="text-sm leading-relaxed text-slate-500">{content.intro[1]}</p>
+          <h2 className="mt-8 text-2xl font-bold text-slate-900">
             {city.name} Evden Eve Nakliyat Sürecimiz
           </h2>
           <div className="mt-6">
@@ -87,25 +87,25 @@ export default async function CityEvdenEvePage({
           </div>
         </div>
         <div className="glass-card p-6">
-          <h2 className="text-sm font-semibold uppercase tracking-wide text-slate-400">
+          <h2 className="text-sm font-semibold uppercase tracking-wide text-slate-500">
             {city.name}&apos;da Neden MerkezNakliyat?
           </h2>
           <ul className="mt-4 space-y-3">
             {content.benefits.map((b) => (
               <li key={b.title} className="flex items-start gap-3">
-                <CheckIcon className="mt-0.5 h-5 w-5 shrink-0 text-cyan-400" />
+                <CheckIcon className="mt-0.5 h-5 w-5 shrink-0 text-orange-500" />
                 <div>
-                  <p className="text-sm font-semibold text-white">{b.title}</p>
-                  <p className="text-xs text-slate-400">{b.desc}</p>
+                  <p className="text-sm font-semibold text-slate-900">{b.title}</p>
+                  <p className="text-xs text-slate-500">{b.desc}</p>
                 </div>
               </li>
             ))}
           </ul>
           <Link
             href={`/asansorlu-nakliyat-hizmeti/${city.slug}`}
-            className="mt-6 flex items-center gap-3 rounded-2xl border border-white/10 bg-white/[0.03] p-4 text-sm text-slate-300 hover:border-white/20 hover:text-white"
+            className="mt-6 flex items-center gap-3 rounded-2xl border border-slate-200 bg-white p-4 text-sm text-slate-600 hover:border-slate-300 hover:text-slate-900"
           >
-            <ElevatorIcon className="h-5 w-5 shrink-0 text-blue-400" />
+            <ElevatorIcon className="h-5 w-5 shrink-0 text-orange-600" />
             {city.name} Asansörlü Nakliyat Hizmeti&apos;ni inceleyin
           </Link>
         </div>
@@ -114,7 +114,7 @@ export default async function CityEvdenEvePage({
       <section className="section-padding">
         <div className="mx-auto max-w-2xl text-center">
           <SectionKicker>Yakın Bölgeler</SectionKicker>
-          <h2 className="text-3xl font-extrabold text-white sm:text-4xl">
+          <h2 className="text-3xl font-extrabold text-slate-900 sm:text-4xl">
             {city.region} Bölgesinde Hizmet Verdiğimiz Diğer İller
           </h2>
         </div>
@@ -131,7 +131,7 @@ export default async function CityEvdenEvePage({
       <section className="section-padding">
         <div className="mx-auto max-w-2xl text-center">
           <SectionKicker>Sıkça Sorulan Sorular</SectionKicker>
-          <h2 className="text-3xl font-extrabold text-white sm:text-4xl">
+          <h2 className="text-3xl font-extrabold text-slate-900 sm:text-4xl">
             {city.name} Evden Eve Nakliyat Hakkında Sorular
           </h2>
         </div>

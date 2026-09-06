@@ -49,10 +49,10 @@ export function SimpleServicePage({
         <div className="grid gap-10 lg:grid-cols-[1.4fr_1fr] lg:gap-12">
           <div>
             <SectionKicker>{kicker}</SectionKicker>
-            <h1 className="text-4xl font-extrabold leading-tight text-white sm:text-5xl">
+            <h1 className="text-4xl font-extrabold leading-tight text-slate-900 sm:text-5xl">
               {h1}
             </h1>
-            <p className="mt-6 text-base leading-relaxed text-slate-400 sm:text-lg">
+            <p className="mt-6 text-base leading-relaxed text-slate-500 sm:text-lg">
               {intro}
             </p>
             <div className="mt-8 flex flex-col gap-3 sm:flex-row">
@@ -61,16 +61,16 @@ export function SimpleServicePage({
             </div>
           </div>
           <div className="glass-card p-6">
-            <h2 className="text-sm font-semibold uppercase tracking-wide text-slate-400">
+            <h2 className="text-sm font-semibold uppercase tracking-wide text-slate-500">
               Hizmet Avantajları
             </h2>
             <ul className="mt-4 space-y-3">
               {benefits.map((b) => (
                 <li key={b.title} className="flex items-start gap-3">
-                  <CheckIcon className="mt-0.5 h-5 w-5 shrink-0 text-cyan-400" />
+                  <CheckIcon className="mt-0.5 h-5 w-5 shrink-0 text-orange-500" />
                   <div>
-                    <p className="text-sm font-semibold text-white">{b.title}</p>
-                    <p className="text-xs text-slate-400">{b.desc}</p>
+                    <p className="text-sm font-semibold text-slate-900">{b.title}</p>
+                    <p className="text-xs text-slate-500">{b.desc}</p>
                   </div>
                 </li>
               ))}
@@ -82,8 +82,8 @@ export function SimpleServicePage({
       <section className="section-padding grid gap-10 lg:grid-cols-2">
         {contentBlocks.map((block) => (
           <div key={block.title}>
-            <h2 className="text-2xl font-bold text-white">{block.title}</h2>
-            <div className="mt-4 space-y-4 text-sm leading-relaxed text-slate-400">
+            <h2 className="text-2xl font-bold text-slate-900">{block.title}</h2>
+            <div className="mt-4 space-y-4 text-sm leading-relaxed text-slate-500">
               {block.body}
             </div>
           </div>
@@ -92,7 +92,7 @@ export function SimpleServicePage({
 
       <section className="section-padding">
         <div className="glass-card p-6 sm:p-8 text-center">
-          <p className="text-sm text-slate-400">
+          <p className="text-sm text-slate-500">
             Detaylı bilgi ve ücretsiz keşif için hemen arayın:{" "}
             <InlinePhoneLink />
           </p>
@@ -102,7 +102,7 @@ export function SimpleServicePage({
       <section className="section-padding">
         <div className="mx-auto max-w-2xl text-center">
           <SectionKicker>İlgili Hizmetler</SectionKicker>
-          <h2 className="text-3xl font-extrabold text-white sm:text-4xl">
+          <h2 className="text-3xl font-extrabold text-slate-900 sm:text-4xl">
             Bununla Birlikte İşinize Yarayabilir
           </h2>
         </div>
@@ -116,7 +116,7 @@ export function SimpleServicePage({
       <section className="section-padding">
         <div className="mx-auto max-w-2xl text-center">
           <SectionKicker>Sıkça Sorulan Sorular</SectionKicker>
-          <h2 className="text-3xl font-extrabold text-white sm:text-4xl">
+          <h2 className="text-3xl font-extrabold text-slate-900 sm:text-4xl">
             Merak Edilenler
           </h2>
         </div>

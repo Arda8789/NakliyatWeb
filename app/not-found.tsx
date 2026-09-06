@@ -6,10 +6,10 @@ export default function NotFound() {
     <div className="container-page flex min-h-[70vh] items-center justify-center py-20">
       <div className="glass-card max-w-lg p-10 text-center">
         <span className="text-gradient text-6xl font-extrabold">404</span>
-        <h1 className="mt-4 text-2xl font-bold text-white">
+        <h1 className="mt-4 text-2xl font-bold text-slate-900">
           Aradığınız Sayfa Bulunamadı
         </h1>
-        <p className="mt-3 text-sm leading-relaxed text-slate-400">
+        <p className="mt-3 text-sm leading-relaxed text-slate-500">
           Bu sayfa taşınmış veya kaldırılmış olabilir. Evden eve nakliyat ve
           asansörlü nakliyat hizmetlerimize anasayfadan ulaşabilir ya da doğrudan
           bizi arayabilirsiniz.

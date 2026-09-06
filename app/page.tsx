@@ -8,6 +8,7 @@ import { CityLinkGrid } from "@/components/CityLinkGrid";
 import { ProcessSteps } from "@/components/ProcessSteps";
 import { CTASection } from "@/components/CTASection";
 import { FAQAccordion } from "@/components/FAQAccordion";
+import { PhotoFrame } from "@/components/PhotoFrame";
 import {
   TruckIcon,
   ElevatorIcon,
@@ -146,12 +147,12 @@ export default function HomePage() {
         <div className="grid items-center gap-12 lg:grid-cols-2 lg:gap-8">
           <div>
             <SectionKicker>Türkiye&apos;nin Güvenilir Nakliyat Firması</SectionKicker>
-            <h1 className="text-4xl font-extrabold leading-[1.1] text-white sm:text-5xl lg:text-[3.4rem]">
+            <h1 className="text-4xl font-extrabold leading-[1.1] text-slate-900 sm:text-5xl lg:text-[3.4rem]">
               <span className="text-gradient">Evden Eve Nakliyat</span> ve{" "}
               <span className="text-gradient">Asansörlü Nakliyat Hizmeti</span>&apos;nde
               Uzman Çözüm Ortağınız
             </h1>
-            <p className="mt-6 max-w-xl text-base leading-relaxed text-slate-400 sm:text-lg">
+            <p className="mt-6 max-w-xl text-base leading-relaxed text-slate-500 sm:text-lg">
               MerkezNakliyat, Türkiye&apos;nin 81 ilinde sigortalı evden eve nakliyat ve
               merdivensiz asansörlü taşımacılık hizmeti sunar. Profesyonel ekibimiz ve
               modern ekipmanlarımızla eşyalarınız güvenle yeni adresine ulaşır.
@@ -160,52 +161,42 @@ export default function HomePage() {
               <CallNowButton />
               <WhatsAppButton />
             </div>
-            <div className="mt-8 flex flex-wrap gap-x-6 gap-y-3 text-sm text-slate-400">
+            <div className="mt-8 flex flex-wrap gap-x-6 gap-y-3 text-sm text-slate-500">
               <span className="flex items-center gap-2">
-                <CheckIcon className="h-4 w-4 text-cyan-400" /> Sigortalı Taşımacılık
+                <CheckIcon className="h-4 w-4 text-orange-500" /> Sigortalı Taşımacılık
               </span>
               <span className="flex items-center gap-2">
-                <CheckIcon className="h-4 w-4 text-cyan-400" /> 81 İlde Hizmet
+                <CheckIcon className="h-4 w-4 text-orange-500" /> 81 İlde Hizmet
               </span>
               <span className="flex items-center gap-2">
-                <CheckIcon className="h-4 w-4 text-cyan-400" /> 7/24 Randevu Hattı
+                <CheckIcon className="h-4 w-4 text-orange-500" /> 7/24 Randevu Hattı
               </span>
             </div>
           </div>
 
           <div className="relative">
-            <div className="glass-card relative overflow-hidden p-7 sm:p-9">
-              <div className="pointer-events-none absolute -right-16 -top-16 h-56 w-56 rounded-full bg-cyan-400/20 blur-[80px]" />
-              <div className="pointer-events-none absolute -bottom-16 -left-10 h-56 w-56 rounded-full bg-blue-600/25 blur-[80px]" />
-              <div className="relative grid grid-cols-2 gap-4">
-                <div className="glass-card col-span-2 flex items-center gap-4 !bg-white/[0.06] p-5">
-                  <div className="flex h-14 w-14 shrink-0 items-center justify-center rounded-2xl bg-gradient-to-br from-blue-500 to-cyan-400 text-white">
-                    <ElevatorIcon className="h-7 w-7" />
-                  </div>
-                  <div>
-                    <div className="font-bold text-white">Asansörlü Nakliyat</div>
-                    <div className="text-xs text-slate-400">Merdivensiz &amp; hızlı taşıma</div>
-                  </div>
-                </div>
-                <div className="glass-card p-5">
-                  <ShieldIcon className="h-6 w-6 text-cyan-400" />
-                  <div className="mt-3 text-sm font-bold text-white">%100 Sigortalı</div>
-                  <div className="text-xs text-slate-400">Taşıma güvencesi</div>
-                </div>
-                <div className="glass-card p-5">
-                  <MapPinIcon className="h-6 w-6 text-cyan-400" />
-                  <div className="mt-3 text-sm font-bold text-white">81 İl</div>
-                  <div className="text-xs text-slate-400">Türkiye geneli</div>
-                </div>
-                <div className="glass-card col-span-2 flex items-center gap-4 p-5">
-                  <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl bg-white/[0.06] text-blue-300">
-                    <TruckIcon className="h-6 w-6" />
-                  </div>
-                  <div>
-                    <div className="text-sm font-bold text-white">Evden Eve Nakliyat</div>
-                    <div className="text-xs text-slate-400">Şehir içi &amp; şehirlerarası</div>
-                  </div>
-                </div>
+            <PhotoFrame
+              src="/images/hero.jpg"
+              alt="MerkezNakliyat ekibi asansörlü nakliyat ile evden eve taşıma yapıyor"
+              aspect="aspect-[4/5] sm:aspect-[5/4]"
+              className="shadow-[0_30px_60px_-25px_rgba(15,23,42,0.35)]"
+            />
+            <div className="glass-card absolute -bottom-6 -left-4 flex items-center gap-3 p-4 sm:-left-8">
+              <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-orange-50 text-orange-600">
+                <ShieldIcon className="h-5 w-5" />
+              </div>
+              <div>
+                <div className="text-sm font-bold text-slate-900">%100 Sigortalı</div>
+                <div className="text-xs text-slate-500">Taşıma güvencesi</div>
+              </div>
+            </div>
+            <div className="glass-card absolute -top-5 -right-3 flex items-center gap-3 p-4 sm:-right-6">
+              <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-orange-50 text-orange-600">
+                <MapPinIcon className="h-5 w-5" />
+              </div>
+              <div>
+                <div className="text-sm font-bold text-slate-900">81 İl</div>
+                <div className="text-xs text-slate-500">Türkiye geneli</div>
               </div>
             </div>
           </div>
@@ -219,10 +210,10 @@ export default function HomePage() {
       <section className="container-page section-padding">
         <div className="mx-auto max-w-2xl text-center">
           <SectionKicker>Hizmetlerimiz</SectionKicker>
-          <h2 className="text-3xl font-extrabold text-white sm:text-4xl">
+          <h2 className="text-3xl font-extrabold text-slate-900 sm:text-4xl">
             Nakliyat İhtiyacınıza Özel Çözümler
           </h2>
-          <p className="mt-4 text-slate-400">
+          <p className="mt-4 text-slate-500">
             Evden eve nakliyat ve asansörlü nakliyat hizmetinden ofis taşımacılığına
             kadar, taşınmanızın her adımını MerkezNakliyat güvencesiyle tamamlıyoruz.
           </p>
@@ -235,20 +226,43 @@ export default function HomePage() {
       </section>
 
       <section className="container-page section-padding">
-        <div className="mx-auto max-w-2xl text-center">
-          <SectionKicker>Neden MerkezNakliyat?</SectionKicker>
-          <h2 className="text-3xl font-extrabold text-white sm:text-4xl">
-            Güvenilir Nakliyat Firması Seçmenin Farkı
-          </h2>
+        <div className="grid items-center gap-10 lg:grid-cols-2">
+          <PhotoFrame
+            src="/images/ekibimiz.jpg"
+            alt="MerkezNakliyat ekibi eşya taşırken"
+            aspect="aspect-[4/3]"
+            className="order-2 lg:order-1"
+          />
+          <div className="order-1 lg:order-2">
+            <SectionKicker>Neden MerkezNakliyat?</SectionKicker>
+            <h2 className="text-3xl font-extrabold text-slate-900 sm:text-4xl">
+              Güvenilir Nakliyat Firması Seçmenin Farkı
+            </h2>
+            <div className="mt-8 grid gap-5 sm:grid-cols-2">
+              {whyUs.slice(0, 4).map((item) => (
+                <div key={item.title} className="flex gap-3">
+                  <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-orange-50 text-orange-600">
+                    {item.icon}
+                  </div>
+                  <div>
+                    <h3 className="text-sm font-bold text-slate-900">{item.title}</h3>
+                    <p className="mt-1 text-xs leading-relaxed text-slate-500">{item.desc}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
         </div>
-        <div className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
-          {whyUs.map((item) => (
-            <div key={item.title} className="glass-card p-6">
-              <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-gradient-to-br from-blue-500/20 to-cyan-400/20 text-blue-300">
+        <div className="mt-6 grid gap-5 sm:grid-cols-2">
+          {whyUs.slice(4).map((item) => (
+            <div key={item.title} className="glass-card flex gap-4 p-5">
+              <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-orange-50 text-orange-600">
                 {item.icon}
               </div>
-              <h3 className="mt-5 text-[15px] font-bold text-white">{item.title}</h3>
-              <p className="mt-2 text-sm leading-relaxed text-slate-400">{item.desc}</p>
+              <div>
+                <h3 className="text-sm font-bold text-slate-900">{item.title}</h3>
+                <p className="mt-1 text-xs leading-relaxed text-slate-500">{item.desc}</p>
+              </div>
             </div>
           ))}
         </div>
@@ -257,7 +271,7 @@ export default function HomePage() {
       <section className="container-page section-padding">
         <div className="mx-auto max-w-2xl text-center">
           <SectionKicker>Nasıl Çalışıyoruz?</SectionKicker>
-          <h2 className="text-3xl font-extrabold text-white sm:text-4xl">
+          <h2 className="text-3xl font-extrabold text-slate-900 sm:text-4xl">
             5 Adımda Sorunsuz Taşınma
           </h2>
         </div>
@@ -269,10 +283,10 @@ export default function HomePage() {
       <section className="container-page section-padding">
         <div className="mx-auto max-w-2xl text-center">
           <SectionKicker>Hizmet Bölgelerimiz</SectionKicker>
-          <h2 className="text-3xl font-extrabold text-white sm:text-4xl">
+          <h2 className="text-3xl font-extrabold text-slate-900 sm:text-4xl">
             Türkiye&apos;nin 81 İlinde Evden Eve ve Asansörlü Nakliyat
           </h2>
-          <p className="mt-4 text-slate-400">
+          <p className="mt-4 text-slate-500">
             MerkezNakliyat, büyükşehirlerden Anadolu&apos;nun en ücra ilçelerine kadar
             Türkiye genelinde evden eve nakliyat ve asansörlü nakliyat hizmeti verir.
           </p>
@@ -290,7 +304,7 @@ export default function HomePage() {
       <section className="container-page section-padding">
         <div className="mx-auto max-w-2xl text-center">
           <SectionKicker>Sıkça Sorulan Sorular</SectionKicker>
-          <h2 className="text-3xl font-extrabold text-white sm:text-4xl">
+          <h2 className="text-3xl font-extrabold text-slate-900 sm:text-4xl">
             Evden Eve ve Asansörlü Nakliyat Hakkında Merak Edilenler
           </h2>
         </div>

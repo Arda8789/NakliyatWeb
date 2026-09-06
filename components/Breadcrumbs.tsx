@@ -18,15 +18,15 @@ export function Breadcrumbs({ items }: { items: Crumb[] }) {
           full.map((i) => ({ name: i.name, url: `${SITE_URL}${i.href}` }))
         )}
       />
-      <nav aria-label="Breadcrumb" className="text-xs text-slate-400">
+      <nav aria-label="Breadcrumb" className="text-xs text-slate-500">
         <ol className="flex flex-wrap items-center gap-1.5">
           {full.map((item, index) => (
             <li key={item.href} className="flex items-center gap-1.5">
-              {index > 0 && <span className="text-slate-600">/</span>}
+              {index > 0 && <span className="text-slate-300">/</span>}
               {index === full.length - 1 ? (
-                <span className="text-slate-300">{item.name}</span>
+                <span className="text-slate-700">{item.name}</span>
               ) : (
-                <Link href={item.href} className="hover:text-white">
+                <Link href={item.href} className="hover:text-orange-600">
                   {item.name}
                 </Link>
               )}

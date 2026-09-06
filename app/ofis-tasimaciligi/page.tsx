@@ -39,7 +39,7 @@ export default function OfisTasimaciligiPage() {
               </p>
               <p>
                 Yüksek katlı plaza ve iş merkezlerinde{" "}
-                <Link href="/asansorlu-nakliyat-hizmeti" className="text-blue-400 hover:text-blue-300">
+                <Link href="/asansorlu-nakliyat-hizmeti" className="text-orange-600 hover:text-orange-700">
                   asansörlü nakliyat hizmetimizle
                 </Link>{" "}
                 ofis eşyalarınızı hızlı ve güvenli şekilde taşıyoruz.

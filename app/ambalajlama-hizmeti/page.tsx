@@ -34,7 +34,7 @@ export default function AmbalajlamaHizmetiPage() {
               Ekibimiz taşınmadan önce evinize gelerek eşyalarınızın türüne uygun
               ambalaj malzemesi (koli, streç film, köpük, baloncuklu naylon) ile
               paketleme yapar. Bu sayede{" "}
-              <Link href="/evden-eve-nakliyat" className="text-blue-400 hover:text-blue-300">
+              <Link href="/evden-eve-nakliyat" className="text-orange-600 hover:text-orange-700">
                 evden eve nakliyat
               </Link>{" "}
               sürecinde hasar riski en aza iner.

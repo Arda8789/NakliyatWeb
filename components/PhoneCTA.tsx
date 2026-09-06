@@ -38,7 +38,7 @@ export function WhatsAppButton({
       className={`btn-outline ${full ? "w-full" : ""} ${className}`}
       aria-label="WhatsApp üzerinden yazın"
     >
-      <WhatsAppIcon className="h-4.5 w-4.5 text-emerald-400" />
+      <WhatsAppIcon className="h-4.5 w-4.5 text-emerald-600" />
       <span>WhatsApp&apos;tan Yaz</span>
     </a>
   );
@@ -48,7 +48,7 @@ export function InlinePhoneLink({ className = "" }: { className?: string }) {
   return (
     <a
       href={PHONE_TEL_HREF}
-      className={`font-semibold text-white underline decoration-blue-400/50 underline-offset-4 hover:text-blue-300 ${className}`}
+      className={`font-bold text-slate-900 underline decoration-orange-400/60 underline-offset-4 hover:text-orange-600 ${className}`}
     >
       {PHONE_DISPLAY}
     </a>

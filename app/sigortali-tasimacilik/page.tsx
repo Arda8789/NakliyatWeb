@@ -41,11 +41,11 @@ export default function SigortaliTasimacilikPage() {
           title: "Hangi Hizmetler Sigorta Kapsamında?",
           body: (
             <p>
-              <Link href="/evden-eve-nakliyat" className="text-blue-400 hover:text-blue-300">
+              <Link href="/evden-eve-nakliyat" className="text-orange-600 hover:text-orange-700">
                 Evden eve nakliyat
               </Link>{" "}
               ve{" "}
-              <Link href="/asansorlu-nakliyat-hizmeti" className="text-blue-400 hover:text-blue-300">
+              <Link href="/asansorlu-nakliyat-hizmeti" className="text-orange-600 hover:text-orange-700">
                 asansörlü nakliyat hizmetimiz
               </Link>{" "}
               dahil olmak üzere tüm taşıma hizmetlerimiz standart sigorta güvencesiyle

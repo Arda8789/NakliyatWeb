@@ -6,11 +6,11 @@
 }
 
 :root {
-  --bg-base: #05070c;
+  --bg-base: #ffffff;
 }
 
 * {
-  scrollbar-color: #2b3a55 transparent;
+  scrollbar-color: #cbd5e1 transparent;
 }
 
 html {
@@ -19,20 +19,18 @@ html {
 
 body {
   background-color: var(--bg-base);
-  color: #e7ecf6;
+  color: #1e293b;
   font-family: var(--font-body), ui-sans-serif, system-ui, sans-serif;
   background-image:
-    radial-gradient(60rem 34rem at 82% -8%, rgba(37, 99, 235, 0.28), transparent 60%),
-    radial-gradient(46rem 30rem at -6% 12%, rgba(34, 211, 238, 0.16), transparent 60%),
-    radial-gradient(50rem 40rem at 50% 118%, rgba(79, 70, 229, 0.20), transparent 60%),
-    linear-gradient(180deg, #05070c 0%, #060911 40%, #05070c 100%);
+    radial-gradient(50rem 26rem at 88% -10%, rgba(249, 115, 22, 0.07), transparent 60%),
+    radial-gradient(46rem 30rem at -8% 8%, rgba(15, 23, 42, 0.05), transparent 60%);
   background-attachment: fixed;
   background-repeat: no-repeat;
 }
 
 ::selection {
-  background: rgba(56, 189, 248, 0.35);
-  color: #ffffff;
+  background: rgba(249, 115, 22, 0.18);
+  color: #0f172a;
 }
 
 h1, h2, h3, h4 {
@@ -50,31 +48,31 @@ h1, h2, h3, h4 {
   }
 
   .glass-card {
-    @apply relative rounded-3xl border border-white/10 bg-white/[0.045] shadow-[0_8px_40px_-14px_rgba(0,0,0,0.7)] backdrop-blur-xl;
+    @apply relative rounded-3xl border border-slate-200 bg-white shadow-[0_10px_40px_-18px_rgba(15,23,42,0.18)];
   }
 
   .glass-panel {
-    @apply border border-white/10 bg-[#070c17]/80 backdrop-blur-xl;
+    @apply border border-slate-200 bg-white/85 backdrop-blur-xl;
   }
 
   .text-gradient {
-    @apply bg-gradient-to-r from-blue-400 via-cyan-300 to-blue-400 bg-clip-text text-transparent;
+    @apply bg-gradient-to-r from-orange-600 via-orange-500 to-amber-500 bg-clip-text text-transparent;
   }
 
   .btn-primary {
-    @apply inline-flex items-center justify-center gap-2 rounded-full bg-gradient-to-r from-blue-600 via-blue-500 to-cyan-400 px-6 py-3.5 text-sm font-semibold text-white shadow-[0_10px_30px_-8px_rgba(37,99,235,0.65)] transition-all duration-300 hover:shadow-[0_14px_36px_-6px_rgba(34,211,238,0.55)] hover:brightness-110 active:scale-[0.98];
+    @apply relative inline-flex items-center justify-center gap-2 rounded-full bg-gradient-to-b from-orange-500 to-orange-600 px-6 py-3.5 text-sm font-bold text-white shadow-[0_1px_0_rgba(255,255,255,0.35)_inset,0_10px_24px_-8px_rgba(234,88,12,0.55)] transition-all duration-300 hover:-translate-y-0.5 hover:shadow-[0_1px_0_rgba(255,255,255,0.35)_inset,0_16px_32px_-8px_rgba(234,88,12,0.65)] active:translate-y-0 active:scale-[0.98];
   }
 
   .btn-outline {
-    @apply inline-flex items-center justify-center gap-2 rounded-full border border-white/15 bg-white/[0.03] px-6 py-3.5 text-sm font-semibold text-white backdrop-blur-sm transition-all duration-300 hover:border-white/30 hover:bg-white/[0.08];
+    @apply inline-flex items-center justify-center gap-2 rounded-full border border-slate-200 bg-white px-6 py-3.5 text-sm font-semibold text-slate-800 shadow-sm transition-all duration-300 hover:-translate-y-0.5 hover:border-slate-300 hover:bg-slate-50 hover:shadow-md active:translate-y-0;
   }
 
   .badge {
-    @apply inline-flex items-center gap-1.5 rounded-full border border-white/10 bg-white/[0.04] px-3.5 py-1.5 text-xs font-medium text-slate-300 backdrop-blur-sm;
+    @apply inline-flex items-center gap-1.5 rounded-full border border-orange-200/70 bg-orange-50 px-3.5 py-1.5 text-xs font-semibold text-orange-700;
   }
 
   .card-hover {
-    @apply transition-all duration-300 hover:-translate-y-1 hover:border-white/20 hover:bg-white/[0.07];
+    @apply transition-all duration-300 hover:-translate-y-1 hover:border-orange-200 hover:shadow-[0_20px_45px_-20px_rgba(15,23,42,0.22)];
   }
 }
 
